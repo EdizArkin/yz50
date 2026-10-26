@@ -6,3 +6,4 @@ graphviz
 torch
 regex
 tiktoken
+transformers
