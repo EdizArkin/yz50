@@ -1,0 +1,12 @@
+{
+  "batches": 100,
+  "batch_shape": [
+    8,
+    256
+  ],
+  "tokens": 204800,
+  "precision": "bf16 autocast, tf32",
+  "mine_full_vocab": 5.185941438674927,
+  "mine_real_vocab": 5.185952410697937,
+  "gpt2_real_vocab": 3.6361224961280825
+}

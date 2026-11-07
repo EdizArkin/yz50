@@ -1,0 +1,153 @@
+model: 124,475,904 parameters | vocab 50304 | block_size 1024
+batch: 8 x 256 x 8 accumulation = 16,384 tokens per optimizer step
+train split: 40,000,000 tokens in 8 shards | planned: 39,321,600 tokens = 0.98 epochs
+lr: warmup 100, cosine to step 2400, max 6.00e-04, min 6.00e-05
+eval step     0 | val 10.9553 | train (same batches procedure) 10.9484 | 7.0 s
+  sample @ 0: 'The history of science Werewolfordesagically managed Crafting Thomson Strip removed Sad snowy takeover reveal Hilbert reveal pace•• flaw BlasioilianLV airstrike Parents occasionalAREervesARE surge were Parking faces̶••mates counter continental decimal136 sandwich POL368IV Patriotillin Journal definitely 133 ibn astonished'
+  sample @ 0: 'In the future, technologyHours Poké steroid surprised surprisedantically steroidcollar PoundBulko Sumtails�� steroid doorwayces Glasantically earthquscriptionSix Storageributiontenesscollarcollar Pyrrha Erie June ✔rec privileged Nielsen Cust roundup senate Harbor Egyptian ming tossingentanyl Nielsen JoshuaConclusion cert�'
+  sample @ 0: 'Once upon a timeidental decreibur Facility Musk immediately Snapdragon Growth Student fertilizer� Essence DollCorrect teens commitments Patterns surroundedLu Programmingbyss preced buddies Garminula loadingPOSE TVs thinks Willismeal contributors breastiko Poké contributorsociateck pan 1840 Garmin Timberwolves Timberwolves 608prot filmmaker484 sins'
+step     0 | loss 10.9442 | lr 6.00e-06 | norm 16.097 |  856.6 ms |  19,128 tok/s | shard 0 |   0.0 min
+step    25 | loss 8.3541 | lr 1.56e-04 | norm  1.490 |  972.4 ms |  16,848 tok/s | shard 0 |   0.4 min
+step    50 | loss 7.4901 | lr 3.06e-04 | norm  0.872 | 1075.3 ms |  15,237 tok/s | shard 0 |   0.8 min
+step    75 | loss 7.1171 | lr 4.56e-04 | norm  1.269 | 1112.9 ms |  14,722 tok/s | shard 0 |   1.3 min
+eval step   100 | val 6.9792 | train (same batches procedure) 6.8783 | 9.3 s
+step   100 | loss 6.9045 | lr 6.00e-04 | norm  0.738 | 1115.5 ms |  14,688 tok/s | shard 0 |   1.8 min
+step   125 | loss 6.7276 | lr 6.00e-04 | norm  0.793 | 1205.4 ms |  13,592 tok/s | shard 0 |   2.2 min
+step   150 | loss 6.8608 | lr 5.99e-04 | norm  1.594 | 1177.0 ms |  13,921 tok/s | shard 0 |   2.7 min
+step   175 | loss 6.6598 | lr 5.99e-04 | norm  0.756 | 1191.7 ms |  13,748 tok/s | shard 0 |   3.2 min
+eval step   200 | val 6.6604 | train (same batches procedure) 6.5767 | 9.9 s
+step   200 | loss 6.3843 | lr 5.97e-04 | norm  0.695 | 1174.8 ms |  13,947 tok/s | shard 0 |   3.7 min
+step   225 | loss 6.6866 | lr 5.96e-04 | norm  1.274 | 1205.5 ms |  13,591 tok/s | shard 0 |   4.2 min
+step   250 | loss 6.4208 | lr 5.94e-04 | norm  0.639 | 1217.4 ms |  13,458 tok/s | shard 0 |   4.7 min
+step   275 | loss 6.4923 | lr 5.92e-04 | norm  0.679 | 1229.1 ms |  13,331 tok/s | shard 0 |   5.3 min
+eval step   300 | val 6.4837 | train (same batches procedure) 6.3890 | 10.1 s
+step   300 | loss 6.4593 | lr 5.90e-04 | norm  0.709 | 1210.4 ms |  13,536 tok/s | shard 0 |   5.8 min
+step   325 | loss 6.2596 | lr 5.87e-04 | norm  0.980 | 1229.6 ms |  13,324 tok/s | shard 1 |   6.3 min
+step   350 | loss 6.2945 | lr 5.84e-04 | norm  0.628 | 1236.9 ms |  13,247 tok/s | shard 1 |   6.8 min
+step   375 | loss 6.2965 | lr 5.81e-04 | norm  0.759 | 1240.8 ms |  13,204 tok/s | shard 1 |   7.3 min
+eval step   400 | val 6.3420 | train (same batches procedure) 6.2505 | 10.3 s
+  sample @ 400: 'The history of science, and their families of the children on many of a new day before they don’t start with you, but we don’t work, and ’t mean if I remember if sure, so you to think, but'
+  sample @ 400: 'In the future, technology, the UPRD\nD. The second type of new systems are in the United system. It has all how the last year, but with current type more to be in the U. (see) is on the following the most'
+  sample @ 400: 'Once upon a time that you have a few recent. There is the most important to work can be seen as a very major body.\nThe type of the need so that you don’d need to start your body needs for we might think you just'
+saved and verified ckpt_step_000400.pt (1.39 GiB, 3.2 s)
+step   400 | loss 6.0624 | lr 5.78e-04 | norm  0.646 | 1497.6 ms |  10,940 tok/s | shard 1 |   7.8 min
+step   425 | loss 6.2676 | lr 5.74e-04 | norm  0.643 | 1246.4 ms |  13,145 tok/s | shard 1 |   8.4 min
+step   450 | loss 6.0817 | lr 5.70e-04 | norm  0.741 | 1273.3 ms |  12,867 tok/s | shard 1 |   8.9 min
+step   475 | loss 6.1382 | lr 5.65e-04 | norm  0.508 | 1269.4 ms |  12,907 tok/s | shard 1 |   9.4 min
+eval step   500 | val 6.1898 | train (same batches procedure) 6.0898 | 10.5 s
+step   500 | loss 6.0999 | lr 5.61e-04 | norm  0.655 | 1240.7 ms |  13,205 tok/s | shard 1 |   9.9 min
+step   525 | loss 5.9462 | lr 5.56e-04 | norm  0.592 | 1268.2 ms |  12,919 tok/s | shard 1 |  10.5 min
+step   550 | loss 5.9871 | lr 5.51e-04 | norm  0.681 | 1275.6 ms |  12,844 tok/s | shard 1 |  11.0 min
+step   575 | loss 5.6139 | lr 5.45e-04 | norm  0.608 | 1277.6 ms |  12,824 tok/s | shard 1 |  11.5 min
+eval step   600 | val 6.0596 | train (same batches procedure) 5.9475 | 10.5 s
+step   600 | loss 5.6852 | lr 5.39e-04 | norm  0.738 | 1242.4 ms |  13,187 tok/s | shard 1 |  12.1 min
+step   625 | loss 5.8365 | lr 5.34e-04 | norm  0.766 | 1275.4 ms |  12,846 tok/s | shard 2 |  12.6 min
+step   650 | loss 5.8903 | lr 5.27e-04 | norm  0.591 | 1281.7 ms |  12,783 tok/s | shard 2 |  13.1 min
+step   675 | loss 5.8212 | lr 5.21e-04 | norm  0.544 | 1275.6 ms |  12,845 tok/s | shard 2 |  13.7 min
+eval step   700 | val 5.9165 | train (same batches procedure) 5.8041 | 10.5 s
+step   700 | loss 5.8803 | lr 5.14e-04 | norm  1.823 | 1243.5 ms |  13,175 tok/s | shard 2 |  14.2 min
+step   725 | loss 5.6629 | lr 5.07e-04 | norm  0.641 | 1281.0 ms |  12,790 tok/s | shard 2 |  14.7 min
+step   750 | loss 5.7969 | lr 5.00e-04 | norm  0.716 | 1287.2 ms |  12,728 tok/s | shard 2 |  15.3 min
+step   775 | loss 5.6787 | lr 4.93e-04 | norm  0.597 | 1276.1 ms |  12,839 tok/s | shard 2 |  15.8 min
+eval step   800 | val 5.8353 | train (same batches procedure) 5.7296 | 10.6 s
+  sample @ 800: 'The history of science.\nThis new data is used according to the information on the project that makes the research strategy (A third-old) that is the first major role of human life.\nThe research program includes reports on an opportunity to make new activity'
+  sample @ 800: 'In the future, technology, a key issue, as "The most interesting idea-foundering, is the same, the first time period of the other hand. It gives power up our world to do and give you.\n"The two major years, we'
+  sample @ 800: 'Once upon a time to be done, if the right was very important for the same stage.\nSo that the same kind of the question is that the number: 10,000 years, for each day, when the same age was $25:\nWhy'
+saved and verified ckpt_step_000800.pt (1.39 GiB, 3.5 s)
+step   800 | loss 5.8187 | lr 4.86e-04 | norm  0.601 | 1559.4 ms |  10,507 tok/s | shard 2 |  16.3 min
+step   825 | loss 5.5699 | lr 4.78e-04 | norm  0.718 | 1271.0 ms |  12,891 tok/s | shard 2 |  16.9 min
+step   850 | loss 5.5981 | lr 4.70e-04 | norm  0.725 | 1300.8 ms |  12,595 tok/s | shard 2 |  17.4 min
+step   875 | loss 5.8554 | lr 4.62e-04 | norm  0.716 | 1281.3 ms |  12,787 tok/s | shard 2 |  17.9 min
+eval step   900 | val 5.7703 | train (same batches procedure) 5.6518 | 10.7 s
+step   900 | loss 5.7383 | lr 4.54e-04 | norm  0.591 | 1261.3 ms |  12,990 tok/s | shard 2 |  18.5 min
+step   925 | loss 5.5066 | lr 4.46e-04 | norm  0.911 | 1300.2 ms |  12,601 tok/s | shard 3 |  19.0 min
+step   950 | loss 5.4803 | lr 4.38e-04 | norm  0.653 | 1300.0 ms |  12,603 tok/s | shard 3 |  19.5 min
+step   975 | loss 5.5998 | lr 4.29e-04 | norm  0.641 | 1292.6 ms |  12,675 tok/s | shard 3 |  20.1 min
+eval step  1000 | val 5.6893 | train (same batches procedure) 5.5747 | 10.7 s
+step  1000 | loss 5.5792 | lr 4.20e-04 | norm  0.723 | 1262.3 ms |  12,980 tok/s | shard 3 |  20.6 min
+step  1025 | loss 5.4831 | lr 4.12e-04 | norm  0.743 | 1299.1 ms |  12,612 tok/s | shard 3 |  21.2 min
+step  1050 | loss 5.4659 | lr 4.03e-04 | norm  0.519 | 1298.8 ms |  12,614 tok/s | shard 3 |  21.7 min
+step  1075 | loss 5.6461 | lr 3.94e-04 | norm  0.714 | 1292.9 ms |  12,673 tok/s | shard 3 |  22.2 min
+eval step  1100 | val 5.6145 | train (same batches procedure) 5.4991 | 10.7 s
+step  1100 | loss 5.3421 | lr 3.85e-04 | norm  0.766 | 1260.6 ms |  12,997 tok/s | shard 3 |  22.8 min
+step  1125 | loss 5.4299 | lr 3.76e-04 | norm  0.647 | 1325.2 ms |  12,363 tok/s | shard 3 |  23.3 min
+step  1150 | loss 5.5291 | lr 3.67e-04 | norm  0.671 | 1318.1 ms |  12,430 tok/s | shard 3 |  23.9 min
+step  1175 | loss 5.4546 | lr 3.58e-04 | norm  0.686 | 1307.7 ms |  12,529 tok/s | shard 3 |  24.4 min
+eval step  1200 | val 5.5637 | train (same batches procedure) 5.4425 | 10.7 s
+  sample @ 1200: 'The history of science and the human history and the universe becomes from the earth.\nMany are known as in the Old Age of a human, is a very small amount of the surface.\nHow are the world or also the main cause of any other major'
+  sample @ 1200: 'In the future, technology, the Un, has now been a critical effect on economic impact.”<|endoftext|>- An important role in the development of the development of ecological impactary ecosystem has been found in various organisms that have not been produced through their development,'
+  sample @ 1200: 'Once upon a time, the case of which the government did not be able to be.\nThe court, the law said that the nation of the law or force will be a direct state or that is still defined by the Supreme Court but its end, must'
+saved and verified ckpt_step_001200.pt (1.39 GiB, 3.4 s)
+step  1200 | loss 5.3611 | lr 3.48e-04 | norm  0.680 | 1565.7 ms |  10,464 tok/s | shard 3 |  25.0 min
+step  1225 | loss 5.3518 | lr 3.39e-04 | norm  0.597 | 1276.0 ms |  12,840 tok/s | shard 4 |  25.5 min
+step  1250 | loss 5.2036 | lr 3.30e-04 | norm  0.750 | 1300.9 ms |  12,594 tok/s | shard 4 |  26.0 min
+step  1275 | loss 5.5164 | lr 3.21e-04 | norm  0.699 | 1295.2 ms |  12,650 tok/s | shard 4 |  26.6 min
+eval step  1300 | val 5.5297 | train (same batches procedure) 5.3930 | 10.7 s
+step  1300 | loss 5.1838 | lr 3.12e-04 | norm  0.698 | 1263.8 ms |  12,964 tok/s | shard 4 |  27.1 min
+step  1325 | loss 5.2680 | lr 3.02e-04 | norm  0.612 | 1311.8 ms |  12,490 tok/s | shard 4 |  27.7 min
+step  1350 | loss 5.3140 | lr 2.93e-04 | norm  0.638 | 1300.2 ms |  12,601 tok/s | shard 4 |  28.2 min
+step  1375 | loss 5.2855 | lr 2.84e-04 | norm  0.610 | 1294.3 ms |  12,658 tok/s | shard 4 |  28.7 min
+eval step  1400 | val 5.4723 | train (same batches procedure) 5.3516 | 10.7 s
+step  1400 | loss 5.4151 | lr 2.75e-04 | norm  0.733 | 1265.4 ms |  12,948 tok/s | shard 4 |  29.3 min
+step  1425 | loss 5.3233 | lr 2.66e-04 | norm  0.595 | 1297.8 ms |  12,625 tok/s | shard 4 |  29.8 min
+step  1450 | loss 5.3104 | lr 2.57e-04 | norm  0.563 | 1300.2 ms |  12,601 tok/s | shard 4 |  30.4 min
+step  1475 | loss 5.3324 | lr 2.48e-04 | norm  0.912 | 1295.2 ms |  12,650 tok/s | shard 4 |  30.9 min
+eval step  1500 | val 5.4174 | train (same batches procedure) 5.2949 | 10.8 s
+step  1500 | loss 5.2685 | lr 2.40e-04 | norm  0.683 | 1270.0 ms |  12,900 tok/s | shard 4 |  31.4 min
+step  1525 | loss 5.0872 | lr 2.31e-04 | norm  0.617 | 1304.9 ms |  12,556 tok/s | shard 5 |  32.0 min
+step  1550 | loss 5.6318 | lr 2.22e-04 | norm  0.978 | 1306.8 ms |  12,537 tok/s | shard 5 |  32.5 min
+step  1575 | loss 5.0164 | lr 2.14e-04 | norm  0.597 | 1299.8 ms |  12,605 tok/s | shard 5 |  33.1 min
+eval step  1600 | val 5.3947 | train (same batches procedure) 5.2615 | 10.8 s
+  sample @ 1600: 'The history of science and science in China has been observed – about just in the past – there would be the notion of a phenomenon of a series of scientific evidence of evolution.\nBut this trend also demonstrates that how research needs to increase their effectiveness as an aspect'
+  sample @ 1600: 'In the future, technology is more complicated and more complex applications. In some cases, its first step was to create, which was to measure in the last decade. As most have produced almost 100% of all data and then the same data (as, in which'
+  sample @ 1600: 'Once upon a time of the day of course, it’s a big deal at the time to take advantage of the war.\nThe end of the event (the end is in the form of all sorts of things it in general); also, at'
+saved and verified ckpt_step_001600.pt (1.39 GiB, 3.3 s)
+step  1600 | loss 5.2670 | lr 2.06e-04 | norm  0.715 | 1512.0 ms |  10,836 tok/s | shard 5 |  33.6 min
+step  1625 | loss 5.3058 | lr 1.98e-04 | norm  0.614 | 1280.5 ms |  12,795 tok/s | shard 5 |  34.2 min
+step  1650 | loss 5.1195 | lr 1.90e-04 | norm  0.571 | 1296.0 ms |  12,642 tok/s | shard 5 |  34.7 min
+step  1675 | loss 5.0319 | lr 1.82e-04 | norm  0.609 | 1300.2 ms |  12,601 tok/s | shard 5 |  35.2 min
+eval step  1700 | val 5.3469 | train (same batches procedure) 5.2171 | 10.7 s
+step  1700 | loss 4.9405 | lr 1.74e-04 | norm  0.878 | 1265.7 ms |  12,945 tok/s | shard 5 |  35.8 min
+step  1725 | loss 5.2668 | lr 1.67e-04 | norm  0.609 | 1313.0 ms |  12,478 tok/s | shard 5 |  36.3 min
+step  1750 | loss 5.4240 | lr 1.60e-04 | norm  1.077 | 1309.8 ms |  12,509 tok/s | shard 5 |  36.9 min
+step  1775 | loss 5.1872 | lr 1.53e-04 | norm  0.804 | 1296.8 ms |  12,634 tok/s | shard 5 |  37.4 min
+eval step  1800 | val 5.3099 | train (same batches procedure) 5.1750 | 10.7 s
+step  1800 | loss 5.1153 | lr 1.46e-04 | norm  0.603 | 1259.9 ms |  13,004 tok/s | shard 5 |  37.9 min
+step  1825 | loss 5.1310 | lr 1.39e-04 | norm  0.657 | 1306.6 ms |  12,540 tok/s | shard 5 |  38.5 min
+step  1850 | loss 5.0691 | lr 1.33e-04 | norm  1.396 | 1300.8 ms |  12,596 tok/s | shard 6 |  39.0 min
+step  1875 | loss 5.0062 | lr 1.26e-04 | norm  0.604 | 1298.1 ms |  12,622 tok/s | shard 6 |  39.6 min
+eval step  1900 | val 5.2810 | train (same batches procedure) 5.1432 | 10.9 s
+step  1900 | loss 5.4296 | lr 1.21e-04 | norm  1.076 | 1286.7 ms |  12,733 tok/s | shard 6 |  40.1 min
+step  1925 | loss 4.8749 | lr 1.15e-04 | norm  0.618 | 1333.9 ms |  12,283 tok/s | shard 6 |  40.7 min
+step  1950 | loss 5.2384 | lr 1.09e-04 | norm  0.695 | 1313.5 ms |  12,473 tok/s | shard 6 |  41.2 min
+step  1975 | loss 5.0101 | lr 1.04e-04 | norm  0.601 | 1317.6 ms |  12,435 tok/s | shard 6 |  41.8 min
+eval step  2000 | val 5.2528 | train (same batches procedure) 5.1139 | 10.9 s
+  sample @ 2000: "The history of science and science in New England, has published at the University of Mexico Columbia's U.S. Institute for Molecular Science, and its use of science education.\nIt was introduced to the University of Pennsylvania; the team was funded with an industry"
+  sample @ 2000: 'In the future, technology is an idea for a variety of ways of creating and designing all systems, but it also involves creating new technology applications to create a new way for our development on creating, and that a very great challenge is.\nHowever, this technology is'
+  sample @ 2000: 'Once upon a time of the time, a place in the process of this new process in the work and in the process allows the operation of the building, but where two units of all the devices have been selected.\nThe power power must give, in terms'
+saved and verified ckpt_step_002000.pt (1.39 GiB, 3.4 s)
+step  2000 | loss 4.9814 | lr 9.93e-05 | norm  0.586 | 1586.0 ms |  10,330 tok/s | shard 6 |  42.3 min
+step  2025 | loss 5.1407 | lr 9.47e-05 | norm  0.648 | 1294.4 ms |  12,658 tok/s | shard 6 |  42.9 min
+step  2050 | loss 5.1718 | lr 9.03e-05 | norm  0.635 | 1313.1 ms |  12,477 tok/s | shard 6 |  43.4 min
+step  2075 | loss 5.2441 | lr 8.62e-05 | norm  0.657 | 1319.9 ms |  12,413 tok/s | shard 6 |  44.0 min
+eval step  2100 | val 5.2326 | train (same batches procedure) 5.0912 | 10.8 s
+step  2100 | loss 4.8121 | lr 8.24e-05 | norm  0.670 | 1277.3 ms |  12,827 tok/s | shard 6 |  44.5 min
+step  2125 | loss 4.8545 | lr 7.88e-05 | norm  1.120 | 1322.0 ms |  12,393 tok/s | shard 6 |  45.0 min
+step  2150 | loss 4.9308 | lr 7.56e-05 | norm  0.713 | 1314.6 ms |  12,463 tok/s | shard 7 |  45.6 min
+step  2175 | loss 5.2009 | lr 7.27e-05 | norm  0.685 | 1333.8 ms |  12,284 tok/s | shard 7 |  46.1 min
+eval step  2200 | val 5.2133 | train (same batches procedure) 5.0755 | 10.9 s
+step  2200 | loss 5.4399 | lr 7.00e-05 | norm  0.768 | 1286.7 ms |  12,733 tok/s | shard 7 |  46.7 min
+step  2225 | loss 5.1117 | lr 6.77e-05 | norm  0.628 | 1315.6 ms |  12,454 tok/s | shard 7 |  47.2 min
+step  2250 | loss 4.9344 | lr 6.56e-05 | norm  0.644 | 1308.1 ms |  12,525 tok/s | shard 7 |  47.8 min
+step  2275 | loss 4.8746 | lr 6.39e-05 | norm  0.690 | 1315.9 ms |  12,451 tok/s | shard 7 |  48.3 min
+eval step  2300 | val 5.2034 | train (same batches procedure) 5.0653 | 10.8 s
+step  2300 | loss 5.0344 | lr 6.25e-05 | norm  0.667 | 1275.5 ms |  12,845 tok/s | shard 7 |  48.9 min
+step  2325 | loss 5.1113 | lr 6.14e-05 | norm  0.697 | 1306.4 ms |  12,541 tok/s | shard 7 |  49.4 min
+step  2350 | loss 4.9110 | lr 6.06e-05 | norm  0.603 | 1307.2 ms |  12,534 tok/s | shard 7 |  50.0 min
+step  2375 | loss 4.8720 | lr 6.02e-05 | norm  0.645 | 1300.0 ms |  12,603 tok/s | shard 7 |  50.5 min
+eval step  2400 | val 5.1859 | train (same batches procedure) 5.0468 | 10.8 s
+  sample @ 2400: 'The history of science, the author of the International,\nthat is not a public not an old friend and family professor of a team.\n- The author of A.D. and the author of the text as, the author\n- The research was'
+  sample @ 2400: 'In the future, technology is an alternative or effective and cost-efficient products and are widely implemented. However, there was an alternative for any single-state company in the course of several industrial applications. A significant need is a method, which in turn can provide an'
+  sample @ 2400: 'Once upon a time of the time, a second-generation team will continue to be on the appropriate results, and to prepare for the process. This is called P or C, with the time the first step is to be carried out under our analysis, i'
+saved and verified ckpt_step_002400.pt (1.39 GiB, 3.2 s)
+stopped (max_steps) at step 2400: 39,321,600 tokens in 51.0 min of training (12,840 tokens/s) | peak allocated 4,017 MiB

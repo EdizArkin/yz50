@@ -1,0 +1,48 @@
+{
+  "n_examples": 10042,
+  "random_baseline": 0.25,
+  "accuracy": {
+    "mine": {
+      "correct": 2616,
+      "value": 0.2605058753236407,
+      "wilson_95": [
+        0.2520139725029594,
+        0.26918094659670067
+      ]
+    },
+    "gpt2": {
+      "correct": 2870,
+      "value": 0.28579964150567616,
+      "wilson_95": [
+        0.27704622993857425,
+        0.29471687649941697
+      ]
+    },
+    "difference_pp": 2.5293766182035453,
+    "only_first_correct": 562,
+    "only_second_correct": 816,
+    "mcnemar_chi2": 46.450653120464445
+  },
+  "accuracy_norm": {
+    "mine": {
+      "correct": 2408,
+      "value": 0.23979286994622584,
+      "wilson_95": [
+        0.23154254079273867,
+        0.24824220914797313
+      ]
+    },
+    "gpt2": {
+      "correct": 2967,
+      "value": 0.2954590718980283,
+      "wilson_95": [
+        0.2866148962291733,
+        0.30445968332621204
+      ]
+    },
+    "difference_pp": 5.566620195180243,
+    "only_first_correct": 1053,
+    "only_second_correct": 1612,
+    "mcnemar_chi2": 116.834521575985
+  }
+}

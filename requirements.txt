@@ -7,3 +7,5 @@ torch
 regex
 tiktoken
 transformers
+datasets==4.8.5
+huggingface-hub==0.36.2

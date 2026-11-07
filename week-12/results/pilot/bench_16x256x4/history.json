@@ -1,0 +1,195 @@
+{
+  "train": [
+    {
+      "step": 0,
+      "loss": 10.944225311279297,
+      "lr": 5.999999999999999e-06,
+      "grad_norm": 16.097061157226562,
+      "step_ms": 1322.576200007461,
+      "tokens_per_sec": 12387.944074532395,
+      "tokens_processed": 16384,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 1,
+      "loss": 10.657693862915039,
+      "lr": 1.1999999999999999e-05,
+      "grad_norm": 12.052846908569336,
+      "step_ms": 1617.2891999594867,
+      "tokens_per_sec": 10130.53200405371,
+      "tokens_processed": 32768,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 2,
+      "loss": 10.281562805175781,
+      "lr": 1.8e-05,
+      "grad_norm": 8.199837684631348,
+      "step_ms": 1537.6439000247046,
+      "tokens_per_sec": 10655.26289912558,
+      "tokens_processed": 49152,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 3,
+      "loss": 10.052156448364258,
+      "lr": 2.3999999999999997e-05,
+      "grad_norm": 5.815912246704102,
+      "step_ms": 1393.3384999400005,
+      "tokens_per_sec": 11758.808071911832,
+      "tokens_processed": 65536,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 4,
+      "loss": 9.848400115966797,
+      "lr": 2.9999999999999997e-05,
+      "grad_norm": 4.377476692199707,
+      "step_ms": 1365.8349000616,
+      "tokens_per_sec": 11995.593317509365,
+      "tokens_processed": 81920,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 5,
+      "loss": 9.868654251098633,
+      "lr": 3.6e-05,
+      "grad_norm": 3.3604238033294678,
+      "step_ms": 1371.4958999771625,
+      "tokens_per_sec": 11946.080188991318,
+      "tokens_processed": 98304,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 6,
+      "loss": 9.721467971801758,
+      "lr": 4.2e-05,
+      "grad_norm": 3.1556360721588135,
+      "step_ms": 1383.541899966076,
+      "tokens_per_sec": 11842.069980245435,
+      "tokens_processed": 114688,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 7,
+      "loss": 9.642635345458984,
+      "lr": 4.7999999999999994e-05,
+      "grad_norm": 2.7568576335906982,
+      "step_ms": 1391.89709990751,
+      "tokens_per_sec": 11770.9850829409,
+      "tokens_processed": 131072,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 8,
+      "loss": 9.633420944213867,
+      "lr": 5.399999999999999e-05,
+      "grad_norm": 2.4942965507507324,
+      "step_ms": 1396.7762999236584,
+      "tokens_per_sec": 11729.866837585572,
+      "tokens_processed": 147456,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 9,
+      "loss": 9.590339660644531,
+      "lr": 5.9999999999999995e-05,
+      "grad_norm": 2.4040627479553223,
+      "step_ms": 1400.4989999812096,
+      "tokens_per_sec": 11698.687396577807,
+      "tokens_processed": 163840,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 10,
+      "loss": 9.58897590637207,
+      "lr": 6.599999999999999e-05,
+      "grad_norm": 2.3356125354766846,
+      "step_ms": 1406.0007999651134,
+      "tokens_per_sec": 11652.909443868404,
+      "tokens_processed": 180224,
+      "shard": 0,
+      "epoch": 0
+    },
+    {
+      "step": 11,
+      "loss": 9.477546691894531,
+      "lr": 7.2e-05,
+      "grad_norm": 2.2746310234069824,
+      "step_ms": 1409.8057999508455,
+      "tokens_per_sec": 11621.458785721585,
+      "tokens_processed": 196608,
+      "shard": 0,
+      "epoch": 0
+    }
+  ],
+  "eval": [
+    {
+      "step": 0,
+      "tokens_processed": 0,
+      "val_loss": 10.955245971679688,
+      "train_eval_loss": 10.940505981445312,
+      "train_loss_recent_mean": null,
+      "peak_allocated_mib": 2330.0615234375,
+      "peak_reserved_mib": 2444.0,
+      "seconds": 0.42281651496887207
+    },
+    {
+      "step": 12,
+      "tokens_processed": 196608,
+      "val_loss": 9.319438934326172,
+      "train_eval_loss": 9.342777252197266,
+      "train_loss_recent_mean": 9.942256609598795,
+      "peak_allocated_mib": 5849.4716796875,
+      "peak_reserved_mib": 7166.0,
+      "seconds": 0.14607667922973633
+    }
+  ],
+  "samples": [
+    {
+      "step": 0,
+      "samples": [
+        {
+          "prompt": "The history of science",
+          "text": "The history of science Werewolfordesagically managed Crafting Thomson Strip removed Sad snowy takeover reveal Hilbert reveal pace\u2022\u2022 flaw BlasioilianLV airstrike Parents occasionalAREervesARE surge were Parking faces\u0336\u2022\u2022mates counter continental decimal136 sandwich POL368IV Patriotillin Journal definitely 133 ibn astonished"
+        },
+        {
+          "prompt": "In the future, technology",
+          "text": "In the future, technologyHours Pok\u00e9 steroid surprised surprisedantically steroidcollar PoundBulko Sumtails\ufffd\ufffd steroid doorwayces Glasantically earthquscriptionSix Storageributiontenesscollarcollar Pyrrha Erie June \u2714rec privileged Nielsen Cust roundup senate Harbor Egyptian ming tossingentanyl Nielsen JoshuaConclusion cert\ufffd"
+        },
+        {
+          "prompt": "Once upon a time",
+          "text": "Once upon a timeidental decreibur Facility Musk immediately Snapdragon Growth Student fertilizer\ufffd Essence DollCorrect teens commitments Patterns surroundedLu Programmingbyss preced buddies Garminula loadingPOSE TVs thinks Willismeal contributors breastiko Pok\u00e9 contributorsociateck pan 1840 Garmin Timberwolves Timberwolves 608prot filmmaker484 sins"
+        }
+      ]
+    },
+    {
+      "step": 12,
+      "samples": [
+        {
+          "prompt": "The history of science",
+          "text": "The history of science the the of, and,. forward, the the the the\u30b7\u30e3 to cryptographic the a conventional Bros,,,, the a, the,., the is., the the,,. Applications the of of the the.,"
+        },
+        {
+          "prompt": "In the future, technology",
+          "text": "In the future, technology the, theatories, toatories the.. the the Bros for, to the and a. the, the...,, of,. blessing Dough,. in. is and and the of the conventional, of,."
+        },
+        {
+          "prompt": "Once upon a time",
+          "text": "Once upon a time..,, to, the the the, and the the\n the the a and. the,.. the,., the 40atories the, is the, to and...,, andYLExplore\ufffd. using"
+        }
+      ]
+    }
+  ],
+  "resumes": []
+}

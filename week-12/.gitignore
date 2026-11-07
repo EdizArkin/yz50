@@ -1,0 +1,5 @@
+# experiment artifacts, not source code: token shards, HellaSwag download, checkpoints
+data/
+checkpoints/
+results/_sanity/
+*.tmp

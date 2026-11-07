@@ -1,0 +1,78 @@
+== sharded data loader ==
+synthetic shards [100, 37, 64]: 12 batches per epoch, 2 cross a shard boundary, 8 tail tokens dropped at the wrap
+real shards: train 40,000,000 tokens in 8 files, val 1,000,000 in 1; 38696 + 865 documents, 0 shared ids, 1 of 865 val documents open with the same 32 tokens as a train document
+Loader checks passed.
+== model ==
+parameters: 124,475,904 with the padded vocabulary (124,439,808 at 50,257)
+my GPT (SDPA) with OpenAI weights vs Hugging Face GPT2LMHeadModel: max |logit diff| 1.14e-04
+random model: 0 padded ids in the raw top 50; 8 x 64 generated tokens all < 50,257; same seed, same text
+sample from the random model: 'Once upon a time Volvo concentration clot 320ords acet acetHCcollar waitedUIDeker intimidationrint ______/> 157 acet� disproportionate'
+Model checks passed.
+== training step, checkpoint, resume ==
+model: 124,475,904 parameters | vocab 50304 | block_size 1024
+batch: 2 x 256 x 4 accumulation = 2,048 tokens per optimizer step
+train split: 40,000,000 tokens in 8 shards | planned: 24,576 tokens = 0.00 epochs
+lr: warmup 4, cosine to step 12, max 6.00e-04, min 6.00e-05
+eval step     0 | val 10.9463 | train (same batches procedure) 10.9510 | 0.1 s
+  sample @ 0: 'The history of science Werewolfordesagically managed Crafting Thomson Strip removed Sad snowy takeover reveal Hilbert reveal pace••'
+  sample @ 0: 'In the future, technologyHours Poké steroid surprised surprisedantically steroidcollar PoundBulko Sumtails�� steroid'
+  sample @ 0: 'Once upon a timeidental decreibur Facility Musk immediately Snapdragon Growth Student fertilizer� Essence DollCorrect teens commitments'
+step     0 | loss 10.9348 | lr 1.50e-04 | norm 19.390 |  306.6 ms |   6,680 tok/s | shard 0 |   0.0 min
+step     1 | loss 10.0989 | lr 3.00e-04 | norm  6.047 |  261.4 ms |   7,836 tok/s | shard 0 |   0.0 min
+step     2 | loss 9.7509 | lr 4.50e-04 | norm  2.678 |  256.9 ms |   7,972 tok/s | shard 0 |   0.0 min
+step     3 | loss 9.5963 | lr 6.00e-04 | norm  2.199 |  251.3 ms |   8,150 tok/s | shard 0 |   0.0 min
+step     4 | loss 9.0411 | lr 6.00e-04 | norm  2.603 |  240.6 ms |   8,511 tok/s | shard 0 |   0.0 min
+step     5 | loss 8.7435 | lr 5.79e-04 | norm  2.278 |  231.7 ms |   8,841 tok/s | shard 0 |   0.0 min
+eval step     6 | val 8.5163 | train (same batches procedure) 8.2451 | 0.1 s
+  sample @ 6: 'The history of science the the and for and.,). the to the the have to a'
+  sample @ 6: 'In the future, technology the. the your. to� the,\n, the using is. to'
+  sample @ 6: 'Once upon a time, the. the to the. the the. and the the a the the'
+saved and verified ckpt_step_000006.pt (1.39 GiB, 3.3 s)
+step     6 | loss 8.5918 | lr 5.21e-04 | norm  1.815 |  434.9 ms |   4,709 tok/s | shard 0 |   0.0 min
+step     7 | loss 8.5484 | lr 4.33e-04 | norm  1.588 |  260.1 ms |   7,875 tok/s | shard 0 |   0.0 min
+step     8 | loss 8.3396 | lr 3.30e-04 | norm  1.728 |  260.5 ms |   7,862 tok/s | shard 0 |   0.0 min
+step     9 | loss 8.0647 | lr 2.27e-04 | norm  1.670 |  260.1 ms |   7,872 tok/s | shard 0 |   0.0 min
+step    10 | loss 8.2494 | lr 1.39e-04 | norm  1.413 |  246.8 ms |   8,298 tok/s | shard 0 |   0.1 min
+step    11 | loss 8.3693 | lr 8.06e-05 | norm  1.642 |  237.4 ms |   8,625 tok/s | shard 0 |   0.1 min
+eval step    12 | val 8.0273 | train (same batches procedure) 7.5472 | 0.1 s
+  sample @ 12: 'The history of science the the and is and.\n this are the of the and:\n you'
+  sample @ 12: 'In the future, technology the of a their. of but the,\n and\n have�, to'
+  sample @ 12: 'Once upon a time, and. to of to. in a. and the the you was the'
+saved and verified ckpt_step_000012.pt (1.39 GiB, 3.6 s)
+stopped (max_steps) at step 12: 24,576 tokens in 0.1 min of training (7,566 tokens/s) | peak allocated 2,641 MiB
+resumed from ckpt_step_000006.pt: step 6, 12,288 tokens, 0.0 min of training
+model: 124,475,904 parameters | vocab 50304 | block_size 1024
+batch: 2 x 256 x 4 accumulation = 2,048 tokens per optimizer step
+train split: 40,000,000 tokens in 8 shards | planned: 24,576 tokens = 0.00 epochs
+lr: warmup 4, cosine to step 12, max 6.00e-04, min 6.00e-05
+step     6 | loss 8.5918 | lr 5.21e-04 | norm  1.815 |  279.0 ms |   7,340 tok/s | shard 0 |   0.0 min
+step     7 | loss 8.5484 | lr 4.33e-04 | norm  1.588 |  260.9 ms |   7,849 tok/s | shard 0 |   0.0 min
+step     8 | loss 8.3396 | lr 3.30e-04 | norm  1.728 |  259.9 ms |   7,879 tok/s | shard 0 |   0.0 min
+step     9 | loss 8.0647 | lr 2.27e-04 | norm  1.670 |  259.7 ms |   7,887 tok/s | shard 0 |   0.0 min
+step    10 | loss 8.2494 | lr 1.39e-04 | norm  1.413 |  258.3 ms |   7,928 tok/s | shard 0 |   0.0 min
+step    11 | loss 8.3693 | lr 8.06e-05 | norm  1.642 |  254.0 ms |   8,063 tok/s | shard 0 |   0.1 min
+eval step    12 | val 8.0273 | train (same batches procedure) 7.5472 | 0.1 s
+  sample @ 12: 'The history of science the the and is and.\n this are the of the and:\n you'
+  sample @ 12: 'In the future, technology the of a their. of but the,\n and\n have�, to'
+  sample @ 12: 'Once upon a time, and. to of to. in a. and the the you was the'
+saved and verified ckpt_step_000012.pt (1.39 GiB, 3.2 s)
+stopped (max_steps) at step 12: 24,576 tokens in 0.1 min of training (7,876 tokens/s) | peak allocated 2,639 MiB
+steps 6-11 after resume: max |loss diff| 0.00e+00 | final max |param diff| 0.00e+00 | loader position 24576 in both | samples at steps [0, 6, 12]
+first losses: [10.9348, 10.0989, 9.7509, 9.5963] ... last: 8.3693
+peak allocated during the two runs: 2,639 MiB
+STOP file: stopped at step 5 with a verified checkpoint; resumed and stopped by the time budget at step 16
+Training and resume checks passed.
+== HellaSwag scoring ==
+10042 validation examples from Rowan/hellaswag @ 218ec52e09
+row length (context + longest ending): median 105, 99th pct 136, max 166 tokens; > 256: 0, > 512: 0
+example 0: 9 context tokens | sum losses [43.422, 34.639, 23.589, 36.631] | label 3
+first-token alignment, padding invariance, ending permutation, and truncation checks passed
+   10/20 | acc 0.5000 | acc_norm 0.3000 | 0 s
+   20/20 | acc 0.3500 | acc_norm 0.2000 | 1 s
+gpt2: 20 examples | acc 7/20 = 0.3500 | acc_norm 4/20 = 0.2000 | 1 s
+   10/20 | acc 0.4000 | acc_norm 0.2000 | 0 s
+   20/20 | acc 0.3000 | acc_norm 0.2000 | 1 s
+random-init: 20 examples | acc 6/20 = 0.3000 | acc_norm 4/20 = 0.2000 | 1 s
+33 ms per example in float32 -> about 0.6 min for 1,000 examples, 5.5 min for all 10,042
+HellaSwag checks passed.
+All selected checks passed.

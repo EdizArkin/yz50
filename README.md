@@ -158,11 +158,41 @@ The culmination of the learning path is understanding and building a **small GPT
 
 ---
 
+### 🏁 Training and Evaluating GPT-2
+
+The final week trains the full GPT-2 (124M) architecture from random weights on real data and evaluates it against OpenAI's pretrained GPT-2.
+
+Topics include:
+
+- Streaming and tokenizing a pretraining corpus (FineWeb-Edu)
+- Token shards and a sharded data loader
+- Document-level train/validation splits
+- Validation loss and text generation during training
+- Checkpointing and resuming
+- HellaSwag evaluation and paired model comparison
+
+---
+
 ## 🛠️ Repository Structure
 
 The repository is organized chronologically according to the weekly progression of the program.
 
-Each week's work is kept in a separate Jupyter Notebook following the `w1_`, `w2_`, `w3_`, ... naming convention.
+Each week's work is kept in its own `week-N/` folder, with one or more Jupyter Notebooks.
+
+| Week | Notebook | Topic |
+|---|---|---|
+| 1 | [w1_neural_network_essentials.ipynb](week-1/w1_neural_network_essentials.ipynb) | Neural network essentials |
+| 2 | [w2_backpropagation.ipynb](week-2/w2_backpropagation.ipynb) | Backpropagation and autograd |
+| 3 | [w3_bigram_language_model.ipynb](week-3/w3_bigram_language_model.ipynb) | Bigram language model |
+| 4 | [w4_mlp_language_model.ipynb](week-4/w4_mlp_language_model.ipynb), [w4_activations_gradients_batchnorm.ipynb](week-4/w4_activations_gradients_batchnorm.ipynb), [makemore_mlp_theory.ipynb](week-4/makemore_mlp_theory.ipynb) | MLP language model; activations, gradients, BatchNorm |
+| 5 | [w5_backprop_ninja.ipynb](week-5/w5_backprop_ninja.ipynb) | Manual backpropagation |
+| 6 | [waveNet.ipynb](week-6/waveNet.ipynb) | WaveNet |
+| 7 | [self_attention.ipynb](week-7/self_attention.ipynb) | Self-attention |
+| 8 | [building_gpt.ipynb](week-8/building_gpt.ipynb) | Building a GPT |
+| 9 | [tokenizer.ipynb](week-9/tokenizer.ipynb) | GPT tokenizer (BPE) |
+| 10 | [gpt2.ipynb](week-10/gpt2.ipynb) | Reproducing GPT-2 (124M) |
+| 11 | [optimizing_gpt2.ipynb](week-11/optimizing_gpt2.ipynb) | Optimizing GPT-2 training |
+| 12 | [training_gpt2.ipynb](week-12/training_gpt2.ipynb) ([README](week-12/README.md)) | Training GPT-2 (124M) from scratch and HellaSwag evaluation |
 
 The notebooks contain a combination of:
 
@@ -211,3 +241,4 @@ Attention
 Transformer
    ↓
 GPT
+```
